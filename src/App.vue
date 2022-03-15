@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-h-screen bg-stone-600 grid place-items-center">
+  <div id="app" class="h-screen min-w-max bg-stone-600 grid place-items-center">
     <CalendarWeek />
     <CalendarEntry />
   </div>
