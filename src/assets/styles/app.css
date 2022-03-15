@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.day {
+  @apply bg-stone-700 text-white text-xs shadow-md mx-1;
+}
+h3 {
+  @apply uppercase text-center text-xs w-full text-white bg-stone-800 py-2 px-3;
+}
+.task {
+  @apply grid place-items-center my-3 mx-6;
+}
+#button-div button {
+  @apply text-[9px] mx-1 mt-1;
+}
