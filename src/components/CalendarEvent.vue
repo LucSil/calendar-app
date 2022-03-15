@@ -8,7 +8,7 @@
       <span class="mx-4">{{ event.details }}</span>
       <div class="button-div">
         <button @click="editEvent(day.id, event.details)">✏</button>
-        <button>❌</button>
+        <button @click="deleteEvent(day.id, event.details)">❌</button>
       </div>
     </div>
     <div
@@ -49,6 +49,9 @@ export default {
       if (updatedEventDetails == "") updatedEventDetails = originalEventDetails;
       store.updateEvent(dayId, originalEventDetails, updatedEventDetails);
       this.newEventDetails = "";
+    },
+    deleteEvent(dayId, eventDetails) {
+      store.deleteEvent(dayId, eventDetails);
     },
   },
   computed: {
